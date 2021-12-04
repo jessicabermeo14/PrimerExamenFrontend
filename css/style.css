@@ -58,6 +58,9 @@ ul {
     justify-content: space-between;
 }
 
+#drop-down {
+    display: none;
+}
 .container-menu {
     padding: 70px 100px 40px;
 }
@@ -181,6 +184,32 @@ footer {
 }
 
 
-/* @media (){
+@media ( max-width:375px){
 
-} */
+    .container-menu {
+        padding: 70px 10px 40px;
+    }
+
+    #nav-container-movil {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #drop-down {
+        display: block;
+        text-align:right;
+        padding-left: 70px;
+    }
+
+    #nav-container-list, #nav-container-button {
+        display: none;
+    }
+    .section-title-principal, .section-image-principal, .section-title-secundary, .section-information-secundary, .section-testimonial {
+        width: 100%;
+    }
+
+    #testimonial2, #testimonial3{
+        display: none;
+    }
+}
